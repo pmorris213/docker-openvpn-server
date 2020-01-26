@@ -4,7 +4,7 @@ ca.crt - the certificate for your certificate authority
 server.crt - the certificate for your server
 server.key - the private key for your server
 
-Permissions on the ./ssl directory need to be 700 for the directory and 600 for the contents, owner should be root
+Permissions on the ./ssl directory need to be 700 for the directory and 600 for the contents
 
 Next you need to update server.conf accordingly. Check Port and Proto
 
