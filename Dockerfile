@@ -10,8 +10,7 @@ RUN mkdir /etc/openvpn/ssl/; \
     openvpn --genkey --secret /etc/openvpn/ssl1/tls-crypt.key;\
     openssl dhparam -out /etc/openvpn/ssl1/dhparam.pem 2048; \
     chmod -R 600 /etc/openvpn/ssl/;\
-    chmod 700 /etc/openvpn/ssl;\
-    echo net.ipv4.ip_forward=1 > /etc/sysctl.d/ipforward.conf;
+    chmod 700 /etc/openvpn/ssl;
 
 RUN yum install -y sudo;
 
